@@ -44,7 +44,14 @@ Example: 120.50 GBP spent on Google Ads that day.
 
 # Marketing_analytics.png
 
-## 1. Histogram of Leads
-## 2. Histogram of Conversions
-## 3. Total Leads by Campaign
-## 4. Total Spend by Campaign
+### 1. Histogram of Leads - How frequently different lead counts occur across all 250 records.
+### 2. Histogram of Conversions - How frequently different conversion counts occur across all records.
+### 3. Total Leads by Campaign
+### 4. Total Spend by Campaign
+
+
+
+# Dashboard.xlsx
+results in the Excel histograms, bar charts, and pivot tables showing data
+
+
