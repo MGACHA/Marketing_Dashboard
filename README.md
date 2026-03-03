@@ -18,6 +18,15 @@ Setup Instructions:
 3. Run this script: python visualize_data.py
 
 
+# Marketing Data Visualisation - Terminal Version
+This script reads marketing_data.csv and creates visualizations in the terminal/PowerShell.
+
+Setup Instructions:
+1. Make sure you've run loaddata.py first to generate the CSV
+2. Install required packages: pip install -r requirements.txt
+3. Run this script: python visualize_terminal.py
+
+
 # marketing_data.csv
 CampaignName - what marketing campaign this row is about
 Examples:
