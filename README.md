@@ -19,7 +19,7 @@ Setup Instructions:
 
 
 # Marketing Data Visualisation - Terminal Version
-This script reads marketing_data.csv and creates visualizations in the terminal/PowerShell.
+This script reads marketing_data.csv and creates visualisations in the terminal/PowerShell.
 
 Setup Instructions:
 1. Make sure you've run loaddata.py first to generate the CSV
@@ -50,6 +50,19 @@ Example:
 Spend - how much money was spent on the campaign
 Example: 120.50 GBP spent on Google Ads that day.
 
+# VS_load_to_msSQL - script
+This py script loads data into SQL and creates tables with aggregated data
+
+Alternatively, a SQL script can be used to do it directly in MSSQL
+
+
+# SQL scripts:
+
+SQL_create_database - create a database in MSsql
+
+SQL_loadCSV - load cvs file as a table
+
+SQL_marketing_campaigns - create the tables and load the data into
 
 # Marketing_analytics.png
 
