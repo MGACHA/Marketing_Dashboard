@@ -1,0 +1,42 @@
+//* values grouped in 20 bins - values for Conversion column*/
+
+ConversionBin = 
+VAR MinVal =
+    CALCULATE ( MIN ( marketing_campaigns[Conversion Count] ), ALL ( marketing_campaigns ) )
+VAR MaxVal =
+    CALCULATE ( MAX ( marketing_campaigns[Conversion Count] ), ALL ( marketing_campaigns ) )
+VAR RangeVal =
+    MaxVal - MinVal
+VAR BinCount = 20
+VAR BinWidth =
+    DIVIDE ( RangeVal, BinCount, 0 )  -- returns 0 if RangeVal is 0 (all values same)
+VAR RawIndex =
+    IF (
+        BinWidth = 0,
+        0,
+        DIVIDE ( marketing_campaigns[Conversion Count] - MinVal, BinWidth, 0 )
+    )
+RETURN
+INT ( RawIndex )
+
+  
+//* values grouped in 20 bins - values for Leads column*/
+
+LeadsBin = 
+VAR MinVal =
+    CALCULATE ( MIN ( marketing_campaigns[Lead_Count] ), ALL ( marketing_campaigns ) )
+VAR MaxVal =
+    CALCULATE ( MAX ( marketing_campaigns[Lead_Count] ), ALL ( marketing_campaigns ) )
+VAR RangeVal =
+    MaxVal - MinVal
+VAR BinCount = 20
+VAR BinWidth =
+    DIVIDE ( RangeVal, BinCount, 0 )  -- returns 0 if RangeVal is 0 (all values same)
+VAR RawIndex =
+    IF (
+        BinWidth = 0,
+        0,
+        DIVIDE ( marketing_campaigns[Lead_Count] - MinVal, BinWidth, 0 )
+    )
+RETURN
+INT ( RawIndex )
