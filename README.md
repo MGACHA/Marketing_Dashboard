@@ -64,6 +64,15 @@ SQL_loadCSV - load cvs file as a table
 
 SQL_marketing_campaigns - create the tables and load the data into
 
+# POWER BI marketing dashboards - MarketingDashboard.pbix:
+
+I connected Power BI to my SSMS, transformed and loaded the data into POWER BI.  
+Used DAX to create bins, prepared dashboards reflecting the one created using PY, and a few additional.
+Exported dashboard into pdf and PowerPoint - MarketingDashboard.pdf and MarketingDashboard.pptx
+
+bin_creation.dax
+
+
 # Marketing_analytics.png
 
 ### 1. Histogram of Leads - How frequently different lead counts occur across all 250 records.
